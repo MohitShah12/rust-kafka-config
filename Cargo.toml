@@ -1,0 +1,19 @@
+[package]
+name = "rust-kafka"
+version = "0.1.0"
+edition = "2021"
+
+
+[[bin]]
+name = "producer"
+path = "src/producer.rs"
+
+[[bin]]
+name = "consumer"
+path = "src/consumer.rs"
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = { version = "1.21.2" , features = ["rt-multi-thread", "macros"]}
+futures = { version = "0.3.24", features = ["async-await"], default-features = false}
+rdkafka = { git = "https://github.com/implrust/rust-rdkafka", tag = "v0.29.0-sasl", features = ["cmake-build","ssl","sasl"]}

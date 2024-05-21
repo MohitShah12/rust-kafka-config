@@ -8,7 +8,11 @@ rdkafka = { git = "https://github.com/implrust/rust-rdkafka", tag = "v0.29.0-sas
 ```
 
 ## To run producer
-### cargo run --bin producer
+```console
+cargo run --bin producer
+```
 
 ## To run consumer
-### cargo run --bin consumer
+```console
+cargo run --bin consumer
+```

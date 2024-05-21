@@ -1,9 +1,9 @@
 # Basic configuration of Kafka in Rust using upstash.
 
 ## Dependecies
-### tokio
-### futures
-### rdkafka
+#### tokio
+#### futures
+#### rdkafka
 
 ## To run producer
 ### cargo run --bin producer
